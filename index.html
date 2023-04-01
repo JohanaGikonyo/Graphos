@@ -1,152 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is mainly for dropdown lists</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../lib/w3.css">
     <script type="text/javascript" Language="javascript">
-    
-         
-function dropdown(){
-    var drop=document.getElementById("hide");
-    if(drop.style.display=="block"){
-        drop.style.display="none";
-    }else{
-        drop.style.display="block";
-    }
-}
+       {
+           var display=document.getElementById('date').innerHTML.Date();
+        }
 
 
-function drop(){
-    var drop=document.getElementById("hides");
-    if(drop.style.display=="block"){
-        drop.style.display="none";
-    }else{
-        drop.style.display="block";
-    }
-}
-  function nums(){
-    
+        function dropdown() {
+            var drop = document.getElementById("hide");
+            if (drop.style.display == "block") {
+                drop.style.display = "none";
+            } else {
+                drop.style.display = "block";
+            }
+        }
 
-var num1=prompt("Enter the number of years: ");
-   var num2=prompt("Enter the number of months: ");
-   var Sum=parseInt(num1)+parseInt(num2);
-   alert("You mean his age is "+Sum+" ?");
-   
-   
-   if(Sum!=35)
-   {
-    
-    for(var i=1; i<=5; i++)
 
-if(i<5){
-    alert("oops!! Your gues is not right! Try Again!")
-    alert(nums());
-    
-    
-}
-else
-{
-    alert("You lost your chance");
-}
-   }
-   
-   else{
-    alert("Congratulations!! You are right. Your gues is as good as mine.")
-    
-   }
-   
-   
-  
-}
-   function student(name, regnum, year)
-   {
-this.Name=name;
-this.Regnum=regnum;
-this.Year=year;
-   }
-   const s1=new student("John","SCT-254",2)
-    document.getElementById('demo').innerHTML=Object.values(student)
-     
-   </script><br><br>
+        function drop() {
+            var drop = document.getElementById("hides");
+            if (drop.style.display == "block") {
+                drop.style.display = "none";
+            } else {
+                drop.style.display = "block";
+            }
+        }
+        
+
+          function prompts(){
+            
+            var num1 = prompt("Enter the number of years: ");
+            var num2 = prompt("Enter the number of months: ");
+            var Sum = parseInt(num1) + parseInt(num2);
+            alert("You mean his age is " + Sum + " ?");
+
+
+            if (Sum != 35) {
+
+                      document.getElementById("guese").innerHTML="Oops!! Your gues is not right! Try Again!";
+              
+                }
+            
+
+            else {
+                
+                document.getElementById("guese").innerHTML="Congratulations!! You are right. Your gues is as good as mine."
+                
+
+            }
+            
+        
+
+
+        }
+        function student(name, regnum, year) {
+            this.Name = name;
+            this.Regnum = regnum;
+            this.Year = year;
+        }
+        const s1 = new student("John", "SCT-254", 2)
+        document.getElementById('demo').innerHTML = Object.values(student)
+
+    </script><br><br>
 </head>
+
 <body>
-   <div>
-    <a href="#" onClick="dropdown()"><img src="./images/pngegg (29).png" alt="" width="50px" height="50px"></a>
-    <div id="hide" style="display: none;">
-    <p>Hii All </p>
-    <p>How are you</p>
-    <p><a href="#" style="text-decoration: none;">Sign Out</a></p>
-    </div><br><br>
-    <div class="navs">
-        <a href="#">About</a>
-        <a href="#">Location</a>
-        <a href="#">Contacts</a>
-        <a href="#">Follow</a>
-        <a href="#">More..</a>
+    <h2 id="date"></h2>
+    <div>
+        <a href="#" onClick="dropdown()"><img src="./images/pngegg (29).png" alt="" width="50px" height="50px"></a>
+        <div id="hide" style="display: none;">
+            <p>Hii All </p>
+            <p>How are you</p>
+            <p><a href="#" style="text-decoration: none;">Sign Out</a></p>
+        </div><br><br>
+        <div class="w3-container w3-half">
+        <div class="navs">
+            <a href="#">About</a>
+            <a href="#">Location</a>
+            <a href="#">Contacts</a>
+            <a href="#">Follow</a>
+            <a href="#">More..</a>
         </div><br>
-    <p onclick="drop()" style="cursor: cell;">Answer to the question: what is very important on this websites</p><br><br>
-    <div id="hides" style="display: none;">
-<p>This webpage is very important for begginners level as it equips them with greater knowledge on animations and dropdowns.</p><br><br>
+        </div><br>
+        <p onclick="drop()" style="cursor: cell;">Answer to the question: what is very important on this websites</p>
+        <br><br>
+        <div id="hides" style="display: none;">
+            <p>This webpage is very important for begginners level as it equips them with greater knowledge on
+                animations and dropdowns.</p><br><br>
+        </div>
+
+        <div class="container">
+            <h2 class="typed" style="color: red;">This is Johana Gikonyo Kihiu. </h2>
+            <P class="typeds" style="color: salmon;"> Was born from a village called Dam, Marmanet lacation, that is in
+                Laikipia County. </P>
+            <p class="typds" style="color: red;">Currently at mmu taking bsc Mathematics and computer Science</p>
+            <p class="typ" style="color: gold;">He joined in 2021 after the end of his 4 years in Thiru High School.</p>
+            <p style="color: orange;">A man of his words. A Young man of a great God, Whose life is full of God's
+                Grace.</p>
+            <p style="color: black;">Very passionate on what he has planned to do and also what he has to do.</p>
+            <h1>WELCOME ALL</h1>
+        </div>
     </div>
 
-    <div class="container">
-          <h2 class="typed" style="color: red;">This is Johana Gikonyo Kihiu. </h2>
-           <P class="typeds" style="color: salmon;"> Was born from a village called Dam, Marmanet lacation, that is in Laikipia County. </P>
-               <p class="typds" style="color: red;">Currently at mmu taking bsc Mathematics and computer Science</p>
-                <p class="typ" style="color: gold;">He joined in 2021 after the end of his 4 years in Thiru High School.</p>
-                 <p style="color: orange; ">A man of his words. A Young man of a great God, Whose life is full of God's Grace.</p> 
-                 <p style="color: black;">Very passionate on what he has planned to do and also what he has to do.</p>  
-                 <h1>WELCOME ALL</h1>
-                </div>
-</div>
+    <p id="demo"></p>
 
-<p id="demo"></p>
-    
-<div >You can guess his age</div>
-<button onclick="nums()" style="border: none; border-radius: 10px; background-color: sandybrown; color: red; margin: 50px; height: 50px; width: 90px;">Click to guess</button>
-    <div class="bod">
+    <div >You can guess his age</div>
+    <button onclick="prompts()"
+        style="border: none; border-radius: 10px; background-color: sandybrown; color: red; margin: 50px; height: 50px; width: 90px;">Click
+        to guess</button>
+        <p id="guese"></p>
+    <div class="w3-container">
+        <div class="bod">
         <img src="./images/pngegg (44).png" alt="" width="70px" height="50px">
-<h2>Welcome to Graphos!</h2>
-<p>Register to create your first account and start exploring the photo Gallary in Graphos</p>
-    <label for="em">Email</label><br><br>
-    <input type="text" name="Email" id="pass" placeholder="emirabiyyuhire@gmail.com" required autofocus ><br><br>
-    
-    <label for="pass">Password</label><br><br>
-    <fieldset class="password fieldset">
-    <input type="password" name="Password" placeholder="........"  id="pass" required autofocus>
-    <img src="./images/pngegg (5).png" alt="" width="20px" height="20px"><br>
-</fieldset>
-    <p><small>Must be atleast 8 Characters</small></p>
-<strong>Select type of account</strong>
-<div class="acc">
-<fieldset>
-<img src="./images/pngegg (31).png" alt=""><input type="radio" name="Account" checked class="create">Crector Account
-</fieldset>
+        <h2>Welcome to Graphos!</h2>
+        <p>Register to create your first account and start exploring the photo Gallary in Graphos</p>
+        <label for="em">Email</label><br><br>
+        <input type="text" name="Email" id="pass" placeholder="emirabiyyuhire@gmail.com" required autofocus><br><br>
 
-<fieldset class="fieldset">
-<input type="radio" name="Account">Personal Account
-</fieldset>
+        <label for="pass">Password</label><br><br>
+        <fieldset class="password fieldset">
+            <input type="password" name="Password" placeholder="........" id="pass" required autofocus>
+            <img src="./images/pngegg (5).png" alt="" width="20px" height="20px"><br>
+        </fieldset>
+        <p><small>Must be atleast 8 Characters</small></p>
+        <strong>Select type of account</strong>
+        <div class="acc">
+            <fieldset>
+                <img src="./images/pngegg (31).png" alt=""><input type="radio" name="Account" checked
+                    class="create">Crector Account
+            </fieldset>
+
+            <fieldset class="fieldset">
+                <input type="radio" name="Account">Personal Account
+            </fieldset>
+        </div>
+
+        <button class="reg">Register</button>
+        <fieldset class="or">
+            <legend class="leg">Or Register</legend>
+        </fieldset>
+
+        <div class="final">
+            <fieldset class="google">
+                <img src="./images/pngegg (17).png" alt="">
+                <button>Google</button>
+                <img src="./images/pngegg (27).png" alt="">
+            </fieldset>
+            <fieldset class="apple">
+                <img src="./images/pngegg (20).png" alt="">
+                <button>Apple ID</button>
+
+            </fieldset>
+        </div>
+        <p>Already have an account?</p><a href="#" style="text-decoration: none;"><strong>
+                <h3>Log in</h3>
+            </strong></a>
+    </div>
 </div>
-
-<button class="reg">Register</button>
-<fieldset class="or"><legend class="leg">Or Register</legend></fieldset>
-
-<div class="final">
-<fieldset class="google">
-    <img src="./images/pngegg (17).png" alt="">
-<button>Google</button>
-<img src="./images/pngegg (27).png" alt="">
-</fieldset>
-<fieldset class="apple">
-    <img src="./images/pngegg (20).png" alt="">
-    <button>Apple ID</button>
-
-</fieldset>
-</div>
-<p>Already have an account?</p><a href="#" style="text-decoration: none;"><strong><h3>Log in</h3></strong></a>
-</div>
-
 </body>
+
 </html>
